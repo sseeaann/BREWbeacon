@@ -1,0 +1,3 @@
+BREWbeacon is a Ruby on Rails web app for people to find tasty brews. They can create a user profile that will allow them to record their favorite brews, help notify what brews are being served and where. 
+
+Brews will be able to be reviewed by drinkers and a map will point people in the direction of their chosen brew. Stay tuned for more!
