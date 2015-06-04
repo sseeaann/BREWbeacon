@@ -20,6 +20,9 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700|Arya);
 
 /*============ APP CSS ===============*/
+
+.navbar { display: none; }
+
 .header { margin-top: 20px; }
   .header h1 { 
     display: inline-block;
@@ -38,18 +41,37 @@
       color: #d9230f;
       cursor: pointer;
     }
+
+div.nav {
+  margin-top: 30px;
+}
+  .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+  }
+
+
 .footer1 { 
   margin-top: 100px;
   height: 50px;
   background-color: #ffc95e;
 }
 .footer2 { 
-  min-height: 300px;
+  min-height: 200px;
   background-color: #d9230f;
   color: #fac0ba;
   border-top: 1px solid #a91b0c;
 }
-  .footer2 a { color: #fac0ba; }
+  .footer2 .footer2Content { min-height: 120px; }
+
+    .footer2 .credits { 
+      border-top: 1px solid #fac0ba; 
+      padding-top: 15px;
+    }
+    .footer2 .credits a { color: #fac0ba; }
+    .footer2 .credits a:hover { color: #fff; }
+
+
 
 
 /*============= BOOTSTRAP THEME ==============*/

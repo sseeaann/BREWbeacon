@@ -2,18 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{ 
-	font-family: 'Arya', sans-serif;
-}
-/*div { outline: 1px dotted red; }*/
+/*======= ABOUT PAGE =========*/
+.aboutInfo { margin-top: 20px; }
+	.aboutInfo .dl-horizontal { margin: 50px 0; }
 
-
-.nav {
-	margin-top: 20px;
-}
-	.dropdown:hover .dropdown-menu {
-	    display: block;
-	    margin-top: 0;
-	}
-
-
+/*======= /ABOUT PAGE =========*/
