@@ -1,2 +1,44 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<div class="container">
+	<div class="nav">
+		<ul class="nav nav-tabs">
+			<li><a href="/">Home</a></li>
+			<li><%= link_to 'About <strong>BREW</strong>beacon'.html_safe, about_path %></li>
+			<li class="dropdown active">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Profiles</a>
+				<ul class="dropdown-menu">
+					<li><a href="/about">About</a></li>
+					<li class="divider"></li>
+					<li><a href="login">Login / Register</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Brew Finder</a></li>
+			<li><a href="#">Home Brew</a></li>
+		</ul>			
+	</div>
+	<div class="col-sm-5">
+		<h1>Signup!</h1>
+		<%= simple_form_for @user, url: '/users' do |f| %>
+			<%= f.input :first_name, placeholder: "First Name" %>
+			<%= f.input :last_name, placeholder: "Last Name" %>
+			<%= f.input :username, placeholder: "Username" %>
+			<%= f.input :email, placeholder: "email@email.com" %>
+			<%= f.input :password, placeholder: "password" %>
+			<%= f.input :password_confirmation, placeholder: "password" %>
+			<%= f.button :submit, "Register" %>
+		<% end %>
+	</div>
+	<div class="col-sm-5 col-sm-offset-1">
+		<h1>Login!</h1>
+		<% if flash.key? ('login_errors') %>
+			<div class="list-group">
+				<h4 class="list-group-item"><%= flash[:login_errors] %></h4>
+			</div>
+		<% end %>
+		<%= simple_form_for :session, url: '/login' do |f| %>
+			<%= f.input :email, placeholder: "email@email.com" %>
+			<%= f.input :password, placeholder: "password" %>
+			<%= f.button :submit, "Sign in" %>
+		<% end %>
+	</div>
+
+</div>
