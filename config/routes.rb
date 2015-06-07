@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :landings, :users
+  resources :landings, :users, :sessions
 
   root 'landings#index'
   get '/about' => 'landings#about'
+  get '/brew_finder' => 'landings#brew_finder'
+
   get '/login' => 'users#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
