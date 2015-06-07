@@ -29,11 +29,23 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# For a bootstrappy site
 gem 'bootstrap-sass'
+
+# Oh Hirb! You enable me to ready tables in the console so easily
 gem 'hirb'
+
+# forms made simple
 gem 'simple_form'
+
+# used to help debug session data
 gem 'rails-footnotes'
+
+# Awesome fonts dude!
 gem 'font-awesome-sass'
+
+# Ensures jquery events will fire on page load
+gem 'jquery-turbolinks'
 
 # Use unicorn as the app server
 # gem 'unicorn'
